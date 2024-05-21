@@ -26,10 +26,8 @@ header .logo{
 
 .menu-item a{
     text-decoration: none;
-    color: black;
-    font-size: 13px;
-    
+    color: black; 
 }
-.icons .icon{
-    gap: 50px;
+.action-bar{
+    gap: 45px;
 }
