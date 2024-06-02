@@ -111,3 +111,67 @@ header .logo{
     font-size: 24px;
     margin-top: 30px;
 }
+.category-products{
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 80px;
+    padding: 45px 50px;
+   
+}
+.explore-section{
+    background-color: #FCF8F3;
+    width: 1500px;
+    height: 670px;
+    position: relative;
+    justify-content: space-between; 
+    align-items: center; 
+}
+.content-box{
+    width: 442px;
+    height: 151px;
+    padding: 62px 43px 37px 39px;
+    border-radius: 10px;
+    position: absolute;
+    top: 80px;
+    left: 10px;
+ 
+}
+.content-box h1{
+   font-size: 40px; 
+   font-weight: 700;
+   color: #3A3A3A;
+}
+.content-box p{
+    font-size: 16px; 
+    font-weight: 400;
+    color: 616161;
+ }
+ .content-box button{
+    width: 176px;
+    height: 65px;
+    padding: 15px 25px;
+    background-color:#B88E2F;
+    border:0px;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 46px;
+ }
+ .img-box{
+    width: 1126px;
+    height: 582px;
+    float: right;
+    padding-right: 40px;
+    
+ }
+
+ .img-box img{
+    height: 582px;
+    width: 500px;
+    float: right;
+    gap: 10px;
+    padding: 15px 5px;
+ }
