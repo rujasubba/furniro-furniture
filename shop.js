@@ -1,14 +1,3 @@
-/* <div class="category__product--item">
-<div class="image-container">
-  <img src="public/assets/Products/Images.png" alt="dining" />
-</div>
-<div class="product-description">
-  <h4>Syltherine</h4>
-  <p>Stylish cafe chair</p>
-  <h5>Rp 2.500.000 Rp 3.500.000</h5>
-</div> */
-
-
 async function fetchData() {
     const productListContainer = document.getElementById('product-list')
     try {
