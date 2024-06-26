@@ -87,6 +87,49 @@ header .logo {
     height: 391px;
 }
 
+h1{
+  text-align: center;
+  font-size: 32px;
+}
+.containerSecond {
+  display: grid;
+  grid-template-columns: 285px 285px 285px 285px;
+  margin: 30px;
+  padding: 20px;  
+  gap: 32px;
+  }
+  .item-containerSecond {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+
+ }
+
+ .item-containerSecond h2{
+  font-size: 20px;
+  font-weight: 500px;
+ }
+
+ .item-containerSecond p{
+  font-size: 15px;
+  font-weight: 300px;
+ }
+
+.image-containerSecond{
+ align-items: center;
+ justify-content: center;
+ padding: 10px 10px 10px 50px;
+}
+
+.image-containerSecond img{
+ height: 120px;
+ width: 120px;
+ align-items: center;
+ justify-content: center;
+}
+
 footer {
   padding: 28px 60px 30px 90px;
 }

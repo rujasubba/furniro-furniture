@@ -84,4 +84,69 @@ async function fetchData(){
      fetchData();
 
 
+
+
+
+     // document.addEventListener('DOMContentLoaded', () => {
+    const containerSecond = document.getElementById('dataContainer');
+
+    // Function to fetch data from the Fake Store API
+    async function fetchLimitedData() {
+        try {
+            const response = await fetch('https://fakestoreapi.com/products');
+            const data = await response.json();
+
+            // Select the first 4 items from the fetched data
+            const itemsToDisplay = data.slice(0, 4);
+
+            itemsToDisplay.forEach((item, index) => {
+                // Create a container for each item
+                const itemContainer = document.createElement('div');
+                itemContainer.classList.add('item-containerSecond');
+
+                const imgCont = document.createElement('div')
+                imgCont.classList.add('image-containerSecond')
+
+                itemContainer.appendChild(imgCont)
+
+                
+
+                const img = document.createElement("img")
+                img.setAttribute('src', item.image)
+                img.setAttribute('alt', item.title)
+                imgCont.appendChild(img)
+
+
+
+                
+                // Create a text element for each item
+                const titleElement = document.createElement('h2');
+                titleElement.textContent = item.title
+                itemContainer.appendChild(titleElement);
+
+                const descriptionElement = document.createElement('p');
+                descriptionElement.textContent = item.category;
+                itemContainer.appendChild(descriptionElement);
+
+                const priceElement = document.createElement('h3');
+                priceElement.textContent = `AUD ${item.price}`
+                itemContainer.appendChild(priceElement);
+
+                
+
+                // Append the item container to the main container
+                containerSecond.appendChild(itemContainer);
+            });
+
+        } catch (error) {
+            console.error('Error fetching data:', error);
+        }
+    }
+
+    // Fetch data when the page loads
+    fetchLimitedData();
+// });
+
+
+
             
