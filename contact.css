@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  padding: 30px 100px 30px 54px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo {
+  width: 100px;
+}
+
+.menu-list {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: black;
+}
+
+.top-container{
+    background-image: url(public/Assets/contactAssets/contact-bg.png);
+    position: relative;
+    top: 0;
+    height: 316px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.top-container h1{
+    position: absolute;
+    right: 45%;
+    bottom: 50%;
+    margin-bottom: 10px;
+    padding: 120px 662px 124px 654; 
+
+}
+
+
+.container {
+    
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.info-upper{
+    align-items: center;
+    justify-content: center;
+    margin-right: 191px;
+    margin-left: 191px;
+}
+
+.info-lower{
+    display: flex;
+    margin-right: 191px;
+    margin-left: 191px;
+    margin-top: 10px;
+}
+
+.info {
+    padding: 20px;
+    background-color: #fff6e5;
+    border-right: 1px solid #ddd;
+    max-width: 300px;
+}
+
+.info h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.info p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.info-item {
+    margin-bottom: 20px;
+}
+
+.info-item span{
+    float: left;
+}
+
+.info-item h2 {
+    font-size: 18px;
+    margin: 10px 0;
+    
+}
+
+.info-item p {
+    font-size: 14px;
+    color: #666;
+    margin: 10px 25px;
+    
+}
+
+img{
+    font-size: 24px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.form {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+form label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #d4a454;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #c18d3b;
+}
