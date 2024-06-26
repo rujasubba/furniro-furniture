@@ -21,12 +21,11 @@ async function fetchData(){
     const productListContainer = document.getElementById('product-list')
 
     try{
-        console.log('FETCH HANYO')
+        
         const data = await fetch('https://fakestoreapi.com/products/7') 
-        console.info('FETCH JSON LAGYO')
+        
         
         const response = await data.json()
-        console.info('DATA DEKHAYO')
 
        
             const product = document.createElement('div')
@@ -48,19 +47,32 @@ async function fetchData(){
             pH1.innerText = response.title
             
             const pH3 = document.createElement('h3')
-            pH3.innerText = response.price
+            pH3.innerText = `AUD ${response.price}`
     
             const pPara = document.createElement('p')
             pPara.innerText = response.description
-    
+
             pDetails.appendChild(pH1)
             pDetails.appendChild(pH3)
             pDetails.appendChild(pPara)
-    
+
         
             product.appendChild(imgCont)
             product.appendChild(pDetails)
             productListContainer.appendChild(product)
+
+            // const txt1 = document.createElement('p')
+            // txt1.innerText = "size"
+
+            // const buttonNames = ['L', 'XL', 'XS']
+
+            // buttonNames.forEach(Name => {
+            //     const newButton = document.createElement('button')
+            //     newButton.innerText = Name
+            // })
+
+            // productListContainer.appendChild(txt1)
+            // productListContainer.appendChild(newButton)
 
 
         }
@@ -69,6 +81,7 @@ async function fetchData(){
         console.error(e)
      }
     }
-
-
      fetchData();
+
+
+            
