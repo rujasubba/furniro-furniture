@@ -22,7 +22,7 @@ async function fetchData(){
 
     try{
         
-        const data = await fetch('https://fakestoreapi.com/products/7') 
+        const data = await fetch('https://fakestoreapi.com/products/14') 
         
         
         const response = await data.json()
@@ -84,10 +84,38 @@ async function fetchData(){
      fetchData();
 
 
+     const descriptionContainer = document.getElementById('pDesc')
+     async function fetchDescription() {
+        try{
+            const response = await fetch('https://fakestoreapi.com/products/14');
+            const data = await response.json();
+
+            const desCont = document.createElement('div')
+            desCont.classList.add('desc-container')
+
+
+            const desHeading = document.createElement('h3')
+            desHeading.innerText = 'Description'
+            desCont.appendChild(desHeading)
+
+            const descData = document.createElement('p')
+            descData.innerText = data.description
+            desCont.appendChild(descData)
+
+            descriptionContainer.appendChild(desCont)
+
+        }
+        catch(e){
+            console.error(e)
+         }
+     }
+     fetchDescription();
 
 
 
-     // document.addEventListener('DOMContentLoaded', () => {
+
+
+
     const containerSecond = document.getElementById('dataContainer');
 
     // Function to fetch data from the Fake Store API
@@ -131,8 +159,7 @@ async function fetchData(){
                 const priceElement = document.createElement('h3');
                 priceElement.textContent = `AUD ${item.price}`
                 itemContainer.appendChild(priceElement);
-
-                
+   
 
                 // Append the item container to the main container
                 containerSecond.appendChild(itemContainer);
@@ -145,7 +172,7 @@ async function fetchData(){
 
     // Fetch data when the page loads
     fetchLimitedData();
-// });
+
 
 
 
