@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  padding: 30px 100px 30px 54px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+header .logo {
+  width: 100px;
+}
+
+.menu-list {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: black;
+}
+
+.icons img{
+    justify-content: space-between;
+
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #333;
+    background-color: #F9F1E7;
+    width: 100%;
+    height: 60px;
+    margin-top: 14px;
+    padding: 30px 986px 32px 38px;
+}
+
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #999;
+    margin: 0 5px;
+    list-style: none;
+}
+
+.breadcrumb .divider {
+    color: #000000;
+    margin: 0 5px;
+}
+
+.breadcrumb .current-item {
+    color: #333;
+    margin: 0 5px;
+}
+
+.product-container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin: 35px 99.99px 55px 99px;
+   
+}
+
+/* .image-container{
+    background-color: #F9F1E7;
+    
+
+} */
+
+.image-container img{
+   
+    height: 391px;
+}
+
+.product-details{
+    width: 481px;
+    height: 391px;
+}
+
+h1{
+  text-align: center;
+  font-size: 22px;
+}
+
+.descriptionContainer{
+  margin: 120px 207px 70px 207px;
+  justify-content: center;
+  align-items: center;
+ 
+  
+}
+
+.desc-container h3{
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.desc-container p{
+  padding: 5px 200px 5px 200px;
+  margin-left: 100px;
+
+
+}
+
+
+
+.size-colorButtons{
+  position:absolute;
+  width: 150px;
+  align-items: center;
+  margin-top: 80px;
+  margin-left: 290px;
+  top: 50%;
+}
+
+.size-selection, .color-selection, .quantity-selection {
+  margin-bottom: 20px;
+}
+
+.size-selection p, .color-selection p {
+  margin: 0 0 10px;
+}
+
+.size-btn, .color-btn {
+  margin-right: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.size-btn:hover, .color-btn:hover {
+  transform: scale(1.5);
+}
+
+.size-btn.selected {
+  background-color: #b88900;
+  color: white;
+}
+
+.color-btn.selected {
+  border: 3px solid #b88900;
+}
+
+input[type="number"] {
+  width: 50px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+
+
+.containerSecond {
+  display: grid;
+  grid-template-columns: 285px 285px 285px 285px;
+  margin: 30px;
+  padding: 20px;  
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
+  
+  }
+  .item-containerSecond {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  height: 311px;
+
+ }
+
+ .item-containerSecond h2{
+  font-size: 20px;
+  font-weight: 500px;
+ }
+
+ .item-containerSecond p{
+  font-size: 15px;
+  font-weight: 300px;
+ }
+
+.image-containerSecond{
+ align-items: center;
+ justify-content: center;
+ padding: 10px 10px 10px 50px;
+}
+
+.image-containerSecond img{
+ height: 120px;
+ width: 120px;
+ align-items: center;
+ justify-content: center;
+}
+#showMore{
+  margin-left: 45%;
+  margin-bottom: 104px;
+  color: #B88E2F;
+  padding: 12px 74px 12px 82px;
+  background: none;
+  font-size: 16px;
+  font-weight: 300;
+  border: #B88E2F 1px solid;
+}
+footer {
+  padding: 28px 60px 30px 90px;
+}
+
+footer .footer-upper {
+  display: flex;
+}
+
+.footer-item:not(:nth-child(2)) {
+  flex: 1;
+}
+
+.footer-item:nth-child(2) {
+  width: 68px;
+  margin-right: 144px;
+}
+
+.footer-item h5 {
+  font-size: 24px;
+}
+
+.footer-item .address {
+  font-size: 14px;
+  color: #9f9f9f;
+  margin-top: 30px;
+}
+
+footer .footer-lower {
+  height: 59px;
+}
+
+.footer-lower p {
+  margin-top: 25px;
+  font-size: 16px;
+}
+
+.footer-muted-title {
+  font-size: 16px;
+  color: #9f9f9f;
+  font-weight: 500;
+}
+
+.footer-navigation {
+  margin-top: 30px;
+}
+.footer-navigation ul {
+  list-style: none;
+}
+
+.footer-navigation ul li {
+  margin-bottom: 25px;
+}
+
+.footer-navigation ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #000;
+  font-weight: 500;
+}
+.newsItems{
+  margin-top: 30px;
+  font-size: 14px;
+  
+}
+
+.newsItems input{
+  border: none;
+  border-bottom: #9F9F9F solid 2px;
+  padding: 4px;
+}
+
+.newsItems button{
+  color: #000000;
+  background: none;
+  border: none;
+  border-bottom: #9F9F9F solid 2px;
+  margin-left: 10px;
+}

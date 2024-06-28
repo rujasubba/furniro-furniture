@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>single Product</title>
+    <link rel="stylesheet" href="singleProduct.css">
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="public/assets/logo.png" alt="logo" />
+      <nav class="navigation">
+        <ul class="menu-list">
+          <li class="menu-item"><a href="index.html">Home</a></li>
+          <li class="menu-item"><a href="shop.html">Shop</a></li>
+          <li class="menu-item"><a href="#">About</a></li>
+          <li class="menu-item"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <ul class="menu-list action-bar">
+        <li class="menu-item">
+          <a href="#">
+            <img
+              class="icon"
+              src="public/Assets/Icons/profile.png"
+              alt="profile"
+            />
+          </a>
+        </li>
+
+        <li class="menu-item">
+          <a href="#">
+            <img
+              class="icon"
+              src="public/Assets/Icons/search.png"
+              alt="search"
+            />
+          </a>
+        </li>
+
+        <li class="menu-item">
+          <a href="#">
+            <img
+              class="icon"
+              src="public/Assets/Icons/wishlist.png"
+              alt="wishlist"
+            />
+          </a>
+        </li>
+
+        <li class="menu-item">
+          <a href="#">
+            <img class="icon" src="public/Assets/Icons/cart.png" alt="cart" />
+          </a>
+        </li>
+      </ul>
+    </header>
+
+    <div class="breadcrumb">
+      <a href="#">Home</a>
+      <span class="divider">></span>
+      <a href="#">Shop</a>
+      <span class="divider">></span>
+      <span class="current-item">Asgaard sofa</span>
+  </div>
+
+  <section>
+    <div class="product-container" id="product-list">
+      <!-- <div class="image-container">
+        <img src="public/Assets/Asgaard sofa 3.png" alt="sofa">
+      </div>
+  
+      <div class="product-details">
+        <H1>Asgaard Sofa</H1>
+        <H3>price in AUD</H3>
+        <p>product descriptions that need to be fetched from API</p>
+      </div> -->
+   
+    <!-- </div> -->
+
+
+
+       <div class="size-colorButtons">
+         <div class="size-selection">
+            <p>Size</p>
+            <button class="size-btn">L</button>
+            <button class="size-btn">XL</button>
+            <button class="size-btn">XS</button>
+         </div>
+         <div class="color-selection">
+            <p>Color</p>
+            <button class="color-btn" style="background-color: #8a4af3; border-radius: 50%;"></button>
+            <button class="color-btn" style="background-color: #000000; border-radius: 50%;"></button>
+            <button class="color-btn" style="background-color: #b88900; border-radius: 50%;"></button>
+         </div>
+         <div class="quantity-selection">
+            <input type="number" min="1" value="1">
+         </div>
+       </div>
+
+    
+  </section>
+
+   <section>
+    <div class="descriptionContainer" id="pDesc">
+
+    </div>
+   </section>
+
+
+  
+  <section>
+    <h1 id="secondContainerHeading">Related Products</h1>
+    <div class="containerSecond" id="dataContainer">
+    </div>
+    <button id="showMore">Show More</button>
+  </section>
+ 
+  <footer>
+      
+    <div class="footer-upper">
+      <div class="footer-item">
+        <h5>Funiro.</h5>
+        <p class="address">
+          400 University Drive Suite 200 Coral <br />
+          Gables,<br />
+          FL 33134 USA
+        </p>
+      </div>
+      <div class="footer-item">
+        <span class="footer-muted-title">Links</span>
+
+        <nav class="footer-navigation">
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-item">
+        <span class="footer-muted-title">Help</span>
+
+        <nav class="footer-navigation">
+          <ul>
+            <li>
+              <a href="#">Payment Options</a>
+            </li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Privacy Policies</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-item">
+        <span class="footer-muted-title">Newsletter</span>
+        <div class="newsItems">
+          <input type="text" placeholder="Enter Your Email address">
+          <button>SUBSCRIBE</button>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="footer-lower">
+      <p>2023 furino. All rights reverved</p>
+    </div>
+  
+</footer>
+
+  <script src="singleProduct.js"></script>
+
+  </body>
+</html>
