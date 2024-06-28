@@ -84,6 +84,24 @@ async function fetchData(){
      fetchData();
 
 
+     const sizeButtons = document.querySelectorAll('.size-btn');
+     const colorButtons = document.querySelectorAll('.color-btn');
+ 
+     sizeButtons.forEach(button => {
+         button.addEventListener('click', () => {
+             sizeButtons.forEach(btn => btn.classList.remove('selected'));
+             button.classList.add('selected');
+         });
+     });
+ 
+     colorButtons.forEach(button => {
+         button.addEventListener('click', () => {
+             colorButtons.forEach(btn => btn.classList.remove('selected'));
+             button.classList.add('selected');
+         });
+     });
+
+
      const descriptionContainer = document.getElementById('pDesc')
      async function fetchDescription() {
         try{

@@ -65,9 +65,12 @@ header .logo {
 }
 
 .product-container{
-    display: flex;
-    gap: 50px;
-    margin: 35px 99.99px 55px 99px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin: 35px 99.99px 55px 99px;
    
 }
 
@@ -112,6 +115,56 @@ h1{
 
 
 }
+
+
+
+.size-colorButtons{
+  position:absolute;
+  width: 150px;
+  align-items: center;
+  margin-top: 80px;
+  margin-left: 290px;
+  top: 50%;
+}
+
+.size-selection, .color-selection, .quantity-selection {
+  margin-bottom: 20px;
+}
+
+.size-selection p, .color-selection p {
+  margin: 0 0 10px;
+}
+
+.size-btn, .color-btn {
+  margin-right: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.size-btn:hover, .color-btn:hover {
+  transform: scale(1.5);
+}
+
+.size-btn.selected {
+  background-color: #b88900;
+  color: white;
+}
+
+.color-btn.selected {
+  border: 3px solid #b88900;
+}
+
+input[type="number"] {
+  width: 50px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+
 
 .containerSecond {
   display: grid;
