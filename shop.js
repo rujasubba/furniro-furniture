@@ -9,8 +9,11 @@ async function fetchData() {
 
         response.forEach(element => {
             console.log('element', element)
+
+             
             const product = document.createElement('div')
             product.classList.add('category__product--item')
+            
 
             const imgCont = document.createElement('div')
             imgCont.classList.add('image-container')
@@ -31,7 +34,7 @@ async function fetchData() {
             pPara.innerText = element.description
 
             const pH5 = document.createElement('h5');
-            pH5.innerText = `NRP ${element.price}`
+            pH5.innerText = `AUD ${element.price}`
 
             productDesc.appendChild(pH2)
             productDesc.appendChild(pPara)
@@ -40,7 +43,8 @@ async function fetchData() {
             product.appendChild(imgCont)
             product.appendChild(productDesc)
 
-            productListContainer.append(product)
+           
+            productListContainer.appendChild(product)
         });
 
 
